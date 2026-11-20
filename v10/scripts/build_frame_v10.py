@@ -507,7 +507,7 @@ def band(off, z0, z1):
         y = w - off
         pts = [V(x, -y, z0), V(x, y, z0), V(x, y, z1), V(x, -y, z1), V(x, -y, z0)]
         ws.append(Part.makePolygon(pts))
-    return Part.makeLoft(ws, True, False)
+    return Part.makeLoft(ws, True, True)        # v10: ruled, so the lip follows the faceted wall (was a smooth spline loft)
 tongue = band(0.2, ztop - 3.0, ztop + 0.01).cut(band(1.6, ztop - 3.5, ztop + 0.5))
 tongue = tongue.cut(Part.makeCompound([Part.makeCylinder(3.2, 10, V(bx, by, ztop - 5)) for bx, by in lid_boss_xy]))
 # v9 snap hooks: flexible fingers below the tongue with a barb that clicks into a window in the pod wall

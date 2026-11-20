@@ -9,7 +9,10 @@ Electronics re-layout of the v9 frame, so the stock 1404 motor wires reach the b
 - **VTX** on its own mount at the rear, x = −27 mm, next to the antenna exit
 - **Turtle V2 board** moved to x = +31 mm, clear of the 32 mm AIO
 - **USB-C slot** moved to x = −8 mm
-- Lid and hood are unchanged from v9
+- **Lid lip fixed:** it now follows the faceted pod wall with a 0.2 mm gap all round. In v9 it was a smooth curve that cut into the wall at the corners (up to 0.5 mm) and left gaps of up to 2.8 mm elsewhere — reprint the lid
+- Hood unchanged from v9
+
+![lid lip](media/lid_lip_v9_v10.png)
 
 ## Centre of mass (estimate)
 ~209 g all-up with a 4S 650 mAh LiPo. With the battery in the v9 position the CoM sits ~6.6 mm ahead of the motor centre; sliding the battery **8 mm back** brings it to ~3.6 mm (front/rear motor load ≈ 53/47 %).
